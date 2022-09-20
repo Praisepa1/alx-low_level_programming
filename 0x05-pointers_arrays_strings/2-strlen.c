@@ -6,16 +6,10 @@
 *Return: return the length of the string
 */
 int _strlen(char *s);
-int main ()
 {
-    char *s = hello world;
-	int len;
+	int len = 0;
 
-	while (*s != '\0')
-	{
-		*s = *s + 1;
-		len+=1;
-	}
+	while (*(s + len) != '\0')
+		len++;
 	return (len);
-	printf("%d", len);
 }
